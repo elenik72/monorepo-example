@@ -1,0 +1,26 @@
+{
+  "name": "@monorepo/app1",
+  "version": "0.1.0",
+  "main": "./src/app.js",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-react": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.2.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0",
+    "webpack": "^5.24.3",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  },
+  "devDependencies": {
+    "webpack-hot-middleware": "2.25.0"
+  },
+  "scripts": {
+    "start": "webpack serve --config ./webpack/config",
+    "build": "rm -rf ./dist && webpack --watch"
+  }
+}

@@ -1,0 +1,16 @@
+workspaces: "packages"
+packages:
+  app1:
+    dir: "app1"
+    name: "@monorepo/app1"
+    webpack: "packages/app1/webpack/config"
+    url_prefix: '^\/app1'
+    html: "packages/app1/dist/index.html"
+  app2:
+    dir: "app2"
+    name: "@monorepo/app2"
+    webpack: "packages/app2/webpack.config"
+    url_prefix: '^\/app2'
+    html: "packages/app2/dist/index.html"
+    # commands:
+    #   - translations:build
